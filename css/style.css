@@ -1,0 +1,72 @@
+html {
+  font-size: 100%; }
+
+:root {
+  --main-bgc: #99aea2;
+  --white: #ffffff;
+  --black: #000;
+  --red: red; }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Roboto"), url("../fonts/Roboto.woff2") format("woff2"); }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.body {
+  font-family: 'Nerko One', cursive;
+  background-color: var(--main-bgc); }
+
+.logo {
+  font-family: 'Nerko One', cursive;
+  font-size: 200%;
+  color: var(--white);
+  text-decoration: none;
+  line-height: 1.5; }
+
+.navigation {
+  list-style: none; }
+  .navigation__list {
+    display: none; }
+    .navigation__list_open {
+      display: block; }
+  .navigation__link {
+    display: block;
+    font-size: 100%;
+    color: var(--white);
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    text-decoration: none; }
+
+.button_navigation {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent; }
+
+.icon_navigation {
+  stroke: var(--black); }
+
+.icon__cross,
+.button_navigation-open .icon__menu {
+  display: none; }
+
+.icon__menu,
+.button_navigation-open .icon__cross {
+  display: block; }
+
+.container {
+  width: 290px;
+  margin: 0 auto; }
+  .container_logo {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
